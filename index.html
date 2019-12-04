@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Блоки</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .parent {
+            flex-grow: 1;
+            display: flex;
+            transition: all 0.5s;
+        }
+        .flex-column {
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            flex-grow: 1;
+            height: 100%;
+            transition: all 0.5s;
+        }
+
+        .child {
+            flex-grow: 1;
+            transition: all 0.5s;
+        }
+
+        .red {
+            background: linear-gradient(#020000, #0613ff)
+        }
+
+        .green {
+            background: linear-gradient(#0613ff, #f00);
+        }
+
+        .blue {
+            background: linear-gradient(#00ff8c, #0e22ff);
+        }
+
+        .yellow {
+            background: linear-gradient(rgb(255, 159, 218), #0015ff);
+        }
+
+        .parent:hover, .container:hover, .child:hover {
+            flex-grow: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="container">
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+        </div>
+        <div class="container flex-column">
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+        </div>
+        <div class="container">
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+        </div>
+        <div class="container flex-column">
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="container flex-column">
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+        </div>
+        <div class="container">
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+        </div>
+        <div class="container flex-column">
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+        </div>
+        <div class="container">
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="container">
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+        </div>
+        <div class="container flex-column">
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+        </div>
+        <div class="container">
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+        </div>
+        <div class="container flex-column">
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="container flex-column">
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+        </div>
+        <div class="container">
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+        </div>
+        <div class="container flex-column">
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+            <div class="child green">
+            </div>
+        </div>
+        <div class="container">
+            <div class="child green">
+            </div>
+            <div class="child blue">
+            </div>
+            <div class="child yellow">
+            </div>
+            <div class="child red">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
